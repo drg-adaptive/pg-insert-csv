@@ -35,7 +35,7 @@
     "build": "yarn rollup -c",
     "prepare": "yarn build",
     "semantic-release": "semantic-release",
-    "test": "jest --collectCoverage"
+    "test": "jest --collectCoverage --passWithNoTests"
   },
   "config": {
     "commitizen": {
