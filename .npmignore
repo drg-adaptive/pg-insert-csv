@@ -1,0 +1,6 @@
+src/
+.travis.yml
+.releaserc.yml
+yarn-error.log
+tsconfig.json
+rollup.config.js

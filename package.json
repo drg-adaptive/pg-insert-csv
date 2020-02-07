@@ -1,0 +1,45 @@
+{
+  "name": "pg-insert-csv",
+  "version": "0.0.1",
+  "description": "Iterate over csv files and insert them into a postgres database",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/drg-adaptive/pg-insert-csv",
+  "bugs": "https://github.com/drg-adaptive/pg-insert-csv/issues",
+  "author": "Elisha Boozer <eboozer@dresources.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/github": "^7.0.2",
+    "@semantic-release/npm": "^7.0.2",
+    "@semantic-release/release-notes-generator": "^9.0.0",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.0",
+    "@types/sqlstring": "^2.2.1",
+    "builtin-modules": "^3.1.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "jest": "^25.1.0",
+    "neat-csv": "^5.1.0",
+    "rollup": "^1.31.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "semantic-release": "^17.0.2",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "yarn rollup -c",
+    "prepare": "yarn build",
+    "semantic-release": "semantic-release",
+    "test": "jest --collectCoverage"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
