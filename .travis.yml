@@ -17,7 +17,6 @@ jobs:
         - ./cc-test-reporter before-build
       deploy:
         provider: script
-        skip_cleanup: true
         script: yarn semantic-release --allow-same-version
       after_script:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

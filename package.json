@@ -1,6 +1,6 @@
 {
   "name": "pg-insert-csv",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Iterate over csv files and insert them into a postgres database",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
