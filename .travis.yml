@@ -4,8 +4,6 @@ os: "linux"
 
 cache: yarn
 
-install: yarn install
-
 jobs:
   include:
     # Define the release stage that runs semantic-release
