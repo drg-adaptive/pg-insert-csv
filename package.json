@@ -16,7 +16,6 @@
     "@semantic-release/release-notes-generator": "^9.0.0",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
-    "@types/sqlstring": "^2.2.1",
     "builtin-modules": "^3.1.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.1.0",
