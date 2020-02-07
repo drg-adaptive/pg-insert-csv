@@ -11,12 +11,6 @@ jobs:
       node_js: lts/*
       # Advanced: optionally overwrite your default `script` step to skip the tests
       # script: skip
-      before_script:
-        - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-        - chmod +x ./cc-test-reporter
-        - ./cc-test-reporter before-build
       deploy:
         provider: script
         script: yarn semantic-release --allow-same-version
-      after_script:
-        - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
